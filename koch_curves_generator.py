@@ -122,7 +122,7 @@ def on_generate_button_click():
     if 0 <= depth <= 11:
         generate_koch_curve(depth)
     else:
-        result_label.config(text="Please enter a number between 0 and 11.")
+        result_label.config(text="Please enter a number between 1 and 7.")
 
 
 
@@ -131,7 +131,7 @@ root = Tk()
 root.title("Koch Curves Generator")
 
 # Create widgets
-label_depth = Label(root, text="Enter the depth of the Koch curve (0 to 11 inclusive):")
+label_depth = Label(root, text="Enter the depth of the Koch curve (1 to 7 inclusive):")
 label_depth.grid(row=0, column=0, padx=10, pady=10)
 
 entry_depth = Entry(root)
